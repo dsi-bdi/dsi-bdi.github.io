@@ -53,11 +53,14 @@ a > .fa {
 
 /* Group logo */
 #logo {
-    width: 154px;
-    height: 35px;
-    margin: 2px 0 8px 0;
+
+    height: 60px;
+    margin: 0px 0 0px 0;
 }
 
+#nav-items{
+    margin-top: 15px !important;
+}
 /* Front page news. */
 ul.news {
 

@@ -11,19 +11,16 @@ role-tables:
   - roles: [grad]
     width: 8
     image: true
-- - roles: [collab, ugrad, ugrad-alum]
-    width: 5
-    image: false
-  - roles: [alum]
-    width: 7
-    image: false
-
 ---
 
 <div class="jumbotron">
     <p>
-        The <b>Awesome Research Group</b> at <b>Example U</b> does all sorts of
-        research. Here is a place where we tell you exactly what that is!
+        The primary focus of the <b>Biomedical Discovery Informatics</b> unit at Data Science Institute of NUI Galway is
+        cutting-edge AI and machine learning solutions motivated by and validated within a wide range of
+        practically-relevant life science use cases. This research falls under the general umbrella of discovery
+        informatics that has recently emerged as a field that explores the potential of applying various computer
+        science technologies like Semantic Web, big data analytics, AI or machine learning to interdisciplinary
+        challenges in turning data and information into actual knowledge.
     </p>
 </div>
 
@@ -41,22 +38,6 @@ role-tables:
             <a href="{{ site.base }}/blog.html">Older posts&hellip;</a>
         </p>
     {% endif %}
-</section>
-
-<section>
-    <h2>Research</h2>
-    <div class="card-columns">
-        {% comment %}
-        Sort the projects by date, putting those without dates last
-        {% endcomment %}
-        {% assign projects_by_date = site.projects | sort: 'last-updated', 'first' %}
-        {% assign projects_by_date = projects_by_date | reverse %}
-        {% for p in projects_by_date %}
-            {% if p.status != "inactive" %}
-                {% include project-card.html project=p %}
-            {% endif %}
-        {% endfor %}
-    </div>
 </section>
 
 <div id="people">

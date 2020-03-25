@@ -13,17 +13,18 @@
         <link rel="stylesheet" href="{{ site.base }}/css/group.css">
     </head>
     <body>
+    <div>
+
+    </div>
         <div class="container">
             <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
             <div class="header d-flex
                         flex-column
                         flex-md-row justify-content-md-between">
                 <a href="{{ site.base }}/" class="">
-                    <img src="{{ site.base }}/img/logo.png"
-                         srcset="{{ site.base }}/img/logo@2x.png 2x"
-                         alt="Awesome" id="logo">
+                    <img src="{{ site.base }}/img/logo.png" srcset="{{ site.base }}/img/dsi_bdi_logo.png" alt="DSI Logo" id="logo">
                 </a>
-                <ul class="nav nav-pills justify-content-center">
+                <ul class="nav nav-pills justify-content-center" id="nav-items">
 
                     {% assign shorturl = page.url | replace:'.html','' | replace:'index','' %}
                     {% for item in site.navigation %}
@@ -65,9 +66,9 @@
 
             <div class="footer">
                 <p>
-                    <a href="http://dept.example.edu/">Illustrious Department</a>
+                    <a href="https://dsi-bdi.github.io/">Biological Discovery Informatics Unit</a>
                     at the
-                    <a href="http://example.edu/">University of Example</a>
+                    <a href="https://datascienceinstitute.ie/">Data Science Institute, NUI Galway</a>
                 </p>
             </div>
 
